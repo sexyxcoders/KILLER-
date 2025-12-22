@@ -34,10 +34,10 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 600))
 ADS_MODE = getenv("ADS_MODE", None)
 
 # Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID", None))
+LOGGER_ID = int(getenv("LOGGER_ID", -1003440789205))
 
 # Get this value from @FallenxBot on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", 7755325478))
+OWNER_ID = int(getenv("OWNER_ID", ""))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -47,15 +47,15 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/TheAloneTeam/AloneMusic",
+    "https://github.com/sexyxcoders/KARTIK",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/TheAloneTeam")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/TheTeamAlone")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/veron_bots")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/privatevoicechatgroup")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", None))
@@ -77,7 +77,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
 
 
 # Get your pyrogram v2 session from @StringFatherBot on Telegram
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION", "")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -93,23 +93,21 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL",
-    "https://files.catbox.moe/34xlvu.jpg",
+    "START_IMG_URL", "https://files.catbox.moe/mkyxi3.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL",
-    "https://files.catbox.moe/34xlvu.jpg",
+    "PING_IMG_URL", "https://files.catbox.moe/vxezej.jpg"
 )
-PLAYLIST_IMG_URL = "https://files.catbox.moe/34xlvu.jpg"
-STATS_IMG_URL = "https://files.catbox.moe/34xlvu.jpg"
-TELEGRAM_AUDIO_URL = "https://files.catbox.moe/34xlvu.jpg"
-TELEGRAM_VIDEO_URL = "https://files.catbox.moe/34xlvu.jpg"
-STREAM_IMG_URL = "https://files.catbox.moe/34xlvu.jpg"
-SOUNCLOUD_IMG_URL = "https://files.catbox.moe/34xlvu.jpg"
-YOUTUBE_IMG_URL = "https://files.catbox.moe/34xlvu.jpg"
-SPOTIFY_ARTIST_IMG_URL = "https://files.catbox.moe/34xlvu.jpg"
-SPOTIFY_ALBUM_IMG_URL = "https://files.catbox.moe/34xlvu.jpg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://files.catbox.moe/34xlvu.jpg"
+PLAYLIST_IMG_URL = "https://files.catbox.moe/8p0047.jpg"
+STATS_IMG_URL = "https://files.catbox.moe/cdekos.jpg"
+TELEGRAM_AUDIO_URL = "https://files.catbox.moe/8p0047.jpg"
+TELEGRAM_VIDEO_URL = "https://files.catbox.moe/8p0047.jpg"
+STREAM_IMG_URL = "https://files.catbox.moe/8p0047.jpg"
+SOUNCLOUD_IMG_URL = "https://files.catbox.moe/8p0047.jpg"
+YOUTUBE_IMG_URL = "https://files.catbox.moe/8p0047.jpg"
+SPOTIFY_ARTIST_IMG_URL = "https://files.catbox.moe/8p0047.jpg"
+SPOTIFY_ALBUM_IMG_URL = "https://files.catbox.moe/8p0047.jpg"
+SPOTIFY_PLAYLIST_IMG_URL = "https://files.catbox.moe/8p0047.jpg"
 
 
 def time_to_seconds(time):
