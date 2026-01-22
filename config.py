@@ -14,8 +14,8 @@ from pyrogram import filters
 
 load_dotenv()
 
-API_URL = getenv("API_URL", 'https://api.nexgenbots.xyz') #youtube song url
-VIDEO_API_URL = getenv("VIDEO_API_URL", 'https://api.video.thequickearn.xyz')
+API_URL = getenv("API_URL", "https://api.nexgenbots.xyz")  # youtube song url
+VIDEO_API_URL = getenv("VIDEO_API_URL", "https://api.video.thequickearn.xyz")
 API_KEY = getenv("API_KEY", None)
 
 # Get this value from my.telegram.org/apps
@@ -26,7 +26,10 @@ API_HASH = getenv("API_HASH", "d6186691704bd901bdab275ceaab88f3")
 BOT_TOKEN = getenv("BOT_TOKEN", "8228009347:AAEbWfkUTuhx8H6qP1vKdEH_ZvMvaGIQpUI")
 
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://itzrayn01_db_user:7MufiiQtN2lJ02Sc@cluster0.bfxbeey.mongodb.net/?appName=Cluster0")
+MONGO_DB_URI = getenv(
+    "MONGO_DB_URI",
+    "mongodb+srv://itzrayn01_db_user:7MufiiQtN2lJ02Sc@cluster0.bfxbeey.mongodb.net/?appName=Cluster0",
+)
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 600))
 
@@ -77,7 +80,10 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
 
 
 # Get your pyrogram v2 session from @StringFatherBot on Telegram
-STRING1 = getenv("STRING_SESSION", "BQFZuDsAEQ_HYRJb7cdcK7SIbPLuxHkb-tC2naFnKQowm9s4ct_jfWrM5zAUbnx6D-YXDxdm5PR9vhqGETE4g_jP1KLyRS_wEhcN68HkarodlIZzhoT2eCgExC0pqC9d_NsHuF7p5NkOX5W4KSKtihFR1k39rHJk8_9Gushq9K8rtpcneFG40knfDjf5wgLZdtDRTQT5ZGePX0NlvqoHObZeOmiGK4vRM2mfqB-RyAuC90WwsZQ0GRlR8te490QXGgLdRZLk7hIbqNNhP23pr1MnmWqKvVVJvpxex0zOqdRMmLIcOS5hAn1d3vFC9I0VAfLT38s3wMW_bhBQz-YLWl3UpXqG-QAAAAHYxh9NAA")
+STRING1 = getenv(
+    "STRING_SESSION",
+    "BQFZuDsAEQ_HYRJb7cdcK7SIbPLuxHkb-tC2naFnKQowm9s4ct_jfWrM5zAUbnx6D-YXDxdm5PR9vhqGETE4g_jP1KLyRS_wEhcN68HkarodlIZzhoT2eCgExC0pqC9d_NsHuF7p5NkOX5W4KSKtihFR1k39rHJk8_9Gushq9K8rtpcneFG40knfDjf5wgLZdtDRTQT5ZGePX0NlvqoHObZeOmiGK4vRM2mfqB-RyAuC90WwsZQ0GRlR8te490QXGgLdRZLk7hIbqNNhP23pr1MnmWqKvVVJvpxex0zOqdRMmLIcOS5hAn1d3vFC9I0VAfLT38s3wMW_bhBQz-YLWl3UpXqG-QAAAAHYxh9NAA",
+)
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -92,13 +98,8 @@ autoclean = []
 confirmer = {}
 
 
-START_VIDEO_URL = getenv(
-    "START_VIDEO_URL",
-    "https://files.catbox.moe/m8wvfi.mp4"
-)
-PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://files.catbox.moe/vxezej.jpg"
-)
+START_VIDEO_URL = getenv("START_VIDEO_URL", "https://files.catbox.moe/m8wvfi.mp4")
+PING_IMG_URL = getenv("PING_IMG_URL", "https://files.catbox.moe/vxezej.jpg")
 PLAYLIST_IMG_URL = "https://files.catbox.moe/8p0047.jpg"
 STATS_IMG_URL = "https://files.catbox.moe/cdekos.jpg"
 TELEGRAM_AUDIO_URL = "https://files.catbox.moe/8p0047.jpg"
