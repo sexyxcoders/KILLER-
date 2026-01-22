@@ -10,7 +10,7 @@ import asyncio
 import importlib
 
 from pyrogram import idle
-from pytgcalls.types.stream import NoActiveGroupCall
+from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from AloneMusic import LOGGER, app, userbot
