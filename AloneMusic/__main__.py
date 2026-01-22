@@ -10,7 +10,7 @@ import asyncio
 import importlib
 
 from pyrogram import idle
-from pyrogram.errors import ChatAdminRequired
+from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from AloneMusic import LOGGER, app, userbot
@@ -51,7 +51,7 @@ async def init():
         await Alone.stream_call("https://te.legra.ph/file/29f784eb49d230ab62e9e.mp4")
     except NoActiveGroupCall:
         LOGGER("AloneMusic").error(
-            "Please turn on the videochat of your log group\channel.\n\nStopping Bot..."
+            "Please turn on the videochat of your log group/channel.\n\nStopping Bot..."
         )
         exit()
     except:
