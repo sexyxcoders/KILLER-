@@ -19,14 +19,14 @@ VIDEO_API_URL = getenv("VIDEO_API_URL", 'https://api.video.thequickearn.xyz')
 API_KEY = getenv("API_KEY", None)
 
 # Get this value from my.telegram.org/apps
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", "22657083"))
+API_HASH = getenv("API_HASH", "d6186691704bd901bdab275ceaab88f3")
 
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN", "8228009347:AAEbWfkUTuhx8H6qP1vKdEH_ZvMvaGIQpUI")
 
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://itzrayn01_db_user:7MufiiQtN2lJ02Sc@cluster0.bfxbeey.mongodb.net/?appName=Cluster0")
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 600))
 
@@ -34,10 +34,10 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 600))
 ADS_MODE = getenv("ADS_MODE", None)
 
 # Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID", -1003440789205))
+LOGGER_ID = int(getenv("LOGGER_ID", "-1002276415311"))
 
 # Get this value from @FallenxBot on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", "7055737197"))
+OWNER_ID = int(getenv("OWNER_ID", "5277773671"))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -77,7 +77,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
 
 
 # Get your pyrogram v2 session from @StringFatherBot on Telegram
-STRING1 = getenv("STRING_SESSION", "")
+STRING1 = getenv("STRING_SESSION", "BQFZuDsAEQ_HYRJb7cdcK7SIbPLuxHkb-tC2naFnKQowm9s4ct_jfWrM5zAUbnx6D-YXDxdm5PR9vhqGETE4g_jP1KLyRS_wEhcN68HkarodlIZzhoT2eCgExC0pqC9d_NsHuF7p5NkOX5W4KSKtihFR1k39rHJk8_9Gushq9K8rtpcneFG40knfDjf5wgLZdtDRTQT5ZGePX0NlvqoHObZeOmiGK4vRM2mfqB-RyAuC90WwsZQ0GRlR8te490QXGgLdRZLk7hIbqNNhP23pr1MnmWqKvVVJvpxex0zOqdRMmLIcOS5hAn1d3vFC9I0VAfLT38s3wMW_bhBQz-YLWl3UpXqG-QAAAAHYxh9NAA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
